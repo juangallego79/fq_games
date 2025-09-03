@@ -120,7 +120,7 @@ function handleCardClick(card) {
     moves += 1;
     updateHUD();
     lockBoard = true;
-    setTimeout(checkForMatch, 700);
+    setTimeout(checkForMatch, 350);
   }
 }
 

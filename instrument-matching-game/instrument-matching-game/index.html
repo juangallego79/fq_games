@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Asociación: Instrumentos de Laboratorio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="start-screen" class="screen active">
+        <h1>Instrumentos de Laboratorio</h1>
+        <p>Selecciona el modo de juego</p>
+        <div class="mode-selection">
+            <button id="one-player-btn">Un Jugador</button>
+            <button id="two-player-btn">Dos Jugadores</button>
+        </div>
+    </div>
+
+    <div id="game-screen" class="screen">
+        <header>
+            <h1>Instrumentos de Lab</h1>
+            <div id="scoreboard" class="scoreboard">
+                <!-- Marcadores se insertarán aquí dinámicamente -->
+            </div>
+        </header>
+
+        <main>
+            <div id="game-board" class="game-board">
+                <!-- Las casillas se generarán con JavaScript -->
+            </div>
+        </main>
+
+        <footer>
+            <button id="restart-btn">Reiniciar</button>
+            <button id="pause-btn">Pausa</button>
+            <button id="change-mode-btn">Cambiar Modo</button>
+        </footer>
+    </div>
+
+    <div id="pause-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Pausa</h2>
+            <button id="resume-btn">Continuar</button>
+        </div>
+    </div>
+
+    <div id="win-screen" class="overlay">
+        <div class="overlay-content">
+            <h2 id="win-message">¡Has Ganado!</h2>
+            <div id="win-stats"></div>
+            <button id="play-again-btn">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

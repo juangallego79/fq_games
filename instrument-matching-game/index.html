@@ -9,10 +9,17 @@
 <body>
     <h1>Instrument Matching Game</h1>
     <p>Find the matching pairs of laboratory instruments!</p>
-    <div id="game-board" class="game-board">
-        <!-- Hidden squares will be generated here -->
+
+    <section class="hud" aria-label="Game stats and controls">
+        <div class="stat"><span id="moves">0</span> Moves</div>
+        <div class="stat"><span id="matches">0</span> Matches</div>
+        <div class="stat"><span id="timer">0:00</span></div>
+        <button id="restart-button" aria-label="Restart the game">New Game</button>
+    </section>
+
+    <div id="game-board" class="game-board" aria-live="polite">
+        <!-- Cards will be generated here -->
     </div>
-    <button id="restart-button">Restart Game</button>
     <script src="js/script.js"></script>
 </body>
 </html>
